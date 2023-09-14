@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title >Product Offers</title>
+  <style>
+    .container {
+      width: 400px;
+      margin-left: 20rem;
+      padding: 20px;
+      text-align: center;
+      color: #ffffff;
+    }
+    .input-field {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+    }
+    .submit-btn {
+      padding: 10px 20px;
+      margin-right: 10px;
+      background-color: #0a0c0a;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    .offers-list {
+      list-style: none;
+      padding: 0;
+      text-align: left;
+    }
+    .offers-list li {
+      margin-bottom: 10px;
+   
+    }
+    .button{
+      padding: 10px 20px;
+      background-color: #000000;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+  </style>
+  <script>
+    document.getElementById("submitBtn").addEventListener("click", function() {
+      var productLink = document.getElementById("productLink").value;
+
+      // You can write your logic here to fetch offers based on the product link
+      // and populate the offersList with the received offers.
+
+      // For demonstration purposes, let's assume we have some dummy offers.
+      var dummyOffers = [
+        { title: "Offer 1", description: "Get 10% off on the product" },
+        { title: "Offer 2", description: "Buy 1, Get 1 free" },
+        { title: "Offer 3", description: "Free shipping on your purchase" }
+      ];
+
+      var offersList = document.getElementById("offersList");
+      offersList.innerHTML = "";
+
+      dummyOffers.forEach(function(offer) {
+        var listItem = document.createElement("li");
+        listItem.innerHTML = "<strong>" + offer.title + "</strong>: " + offer.description;
+        offersList.appendChild(listItem);
+      });
+    });
+  </script>
+</head>
+<body>
+  <div class="container">
+    <h1>Product Offers</h1>
+    <input id="productLink" class="input-field" type="text" placeholder="Paste product link">
+    <button id="submitBtn" class="submit-btn">Get Offers</button>
+    <a href="DellXPS13.html"><button id="button" class="button">
+    Go to product</button></a>
+    <ul id="offersList" class="offers-list"></ul>
+  </div>
+
+  <script>
+    document.getElementById("submitBtn").addEventListener("click", function() {
+      var productLink = document.getElementById("productLink").value;
+
+      // You can write your logic here to fetch offers based on the product link
+      // and populate the offersList with the received offers.
+
+      // For demonstration purposes, let's assume we have some dummy offers.
+      var dummyOffers = [
+        { title: "Offer 1", description: "Get 10% off on the product" },
+        { title: "Offer 2", description: "Buy 1, Get 1 free" },
+        { title: "Offer 3", description: "Free shipping on your purchase" }
+      ];
+
+      var offersList = document.getElementById("offersList");
+      offersList.innerHTML = "";
+
+      dummyOffers.forEach(function(offer) {
+        var listItem = document.createElement("li");
+        listItem.innerHTML = "<strong>" + offer.title + "</strong>: " + offer.description;
+        offersList.appendChild(listItem);
+      });
+    });
+  </script>
+
+
+<style>
+  @import url(https://fonts.googleapis.com/css?family=Roboto:300);
+
+  .login-page {
+    width: 360px;
+    padding: 8% 0 0;
+    margin: auto;
+  }
+  .login-page .form .login{
+    margin-top: -61px;
+  margin-bottom: 56px;
+  }
+  .form {
+    position: relative;
+    z-index: 1;
+    background: #00000000;
+    max-width: 360px;
+    margin: 0 auto 100px;
+    padding: 45px;
+    text-align: center;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+  }
+  .form input {
+    font-family: "Roboto", sans-serif;
+    outline: 0;
+    background: #f2f2f2;
+    width: 100%;
+    border: 0;
+    margin: 0 0 15px;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 14px;
+  }
+  .form button {
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+    outline: 4;
+    background-color: #00000000;
+    background-image: linear-gradient(45deg,#367c95,#e1dad4);
+    width: 100%;
+    border: 0;
+    padding: 15px;
+    color: #f1e4e43f;
+    font-size: 14px;
+    -webkit-transition: all 0.3 ease;
+    transition: all 0.3 ease;
+  }
+  .form .message {
+    margin: 15px 0 0;
+    color: #b3b3b3;
+    font-size: 12px;
+  }
+  .form .message a {
+    color: #4CAF50;
+    text-decoration: none;
+  }
+  
+  .container {
+    position: relative;
+    z-index: 1;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+  
+  body {
+    background-image: url("k.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+    font-family: "Roboto", sans-serif;
+  }
+  .login-header{
+    color: #ffffff;
+    font-size: larger;
+  }
+
+</style>
+  <body>
+  <div class="login-page">
+    <div class="form">
+      <div class="login">
+        <div class="login-header">
+        <h3>POPULAR PRODUCTS</h3>
+        </div>
+      </div>
+      <form class="login-form">
+        <button><a href="view_property.html">Iphone 14 Plus(128 GB)</button></a>
+        <button><a href="1watch.html">Iwatch series 6(black)</button></a>
+        <button><a href="printer.html">Canon Inkjet Printer</button></a>
+    
+      </form>
+    </div>
+    </div>
+</body>
+
+</html>

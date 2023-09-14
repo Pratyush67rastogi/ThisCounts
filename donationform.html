@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="donationform.css">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+<body>
+  <div class="container">
+    <div class="title">Fill in your details for your order</div>
+    <div class="content">
+      <form action="thank.html">
+        <div class="user-details">
+          <div class="input-box">
+            <span class="details">Customer Name *</span>
+            <input type="text" placeholder="Enter product name" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Address *</span>
+            <input type="text" placeholder="Flat no." required>
+            <input type="text" placeholder="Street" required>
+            <input type="text" placeholder="City" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Price *</span>
+            <input type="text" placeholder="Enter the price" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Image</span>
+            <input type="file" id="img" name="img" accept="image/*">
+          </div>
+          <div class="input-box">
+            <span class="details">Mobile Number *</span>
+            <input type="text" placeholder="Enter your mobile number" required>
+          </div>
+        </div>
+        <div class="gender-details">
+          <input type="radio" name="gender" id="dot-1">
+          <input type="radio" name="gender" id="dot-2">
+          <input type="radio" name="gender" id="dot-3">
+          <span class="gender-title">Product Type</span>
+          <div class="category">
+            <label for="dot-1">
+            <span class="dot one"></span>
+            <span class="gender">Fragile</span>
+          </label>
+          <label for="dot-2">
+            <span class="dot two"></span>
+            <span class="gender">Non-Fragile</span>
+          </label>
+          <label for="dot-3">
+            <span class="dot three"></span>
+            <span class="gender">Not known</span>
+            </label>
+          </div>
+        </div>
+        <div class="button">
+          <input type="submit" value="Register">
+        </div>
+      </form>
+    </div>
+  </div>
+
+</body>
+</html>
